@@ -8,7 +8,9 @@ const check = () => {
     <Layout>      
       <Wrapper>
         <h1>check</h1>
+        
         <Link to="/">Home</Link>
+
         <p className='text'>This is to check. Lorem23gf Lorem23gf Lorem23gf Lorem23gf</p>
       </Wrapper>
     </Layout>
