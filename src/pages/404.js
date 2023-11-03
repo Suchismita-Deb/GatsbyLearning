@@ -1,9 +1,13 @@
 import React from 'react'
+import Layout from '../components/Layout'
 
-const error = () => {
+const Error = () => {
   return (
-    <div>error</div>
+    <Layout>      
+      <h1>error Page</h1>
+    </Layout>
   )
 }
 
-export default error
+
+export default Error
