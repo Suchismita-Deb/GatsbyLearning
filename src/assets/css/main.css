@@ -525,7 +525,8 @@ form > *:last-child {
   border-radius: var(--borderRadius);
 }
 .hero {
-  height: 40vh;
+  height: 30vh; 
+  /* The hero is 40% of the size of the screen. We can change that if we want the banner image to be thin.*/
   position: relative;
   margin-bottom: 2rem;
 }
