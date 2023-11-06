@@ -1,35 +1,39 @@
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { useStaticQuery,graphql } from 'gatsby'
 
-const ComponentName = () => {
-  const data = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          title
-          description
-          author
-          person {
-            name
-            age
-          }
-          simpleData
-          complexData {
-            name
-            age
-          }
+
+const getData = graphql`
+query{
+    site {
+      siteMetadata {
+        title
+        description
+        author
+        person {
+          name
+          age
+        }
+        simpleData
+        complexData {
+          name
+          age
         }
       }
     }
-  `)
-  return <div>
-    <h2>{data.site.siteMetadata.person.name}</h2>
+  }
+`
+
+const FetchData = () => {
+    // const data = useStaticQuery(getData)
+    // console.log(useStaticQuery(getData))
+    const {site:{siteMetadata:{title}}} = useStaticQuery(getData) // This is destructuring and we are getting the data inside the object.
+
+  return (
     <div>
-      {data.site.siteMetadata.complexData.map((item,index)=>{
-        return <p key={index}>{item.name}:{item.age}</p>
-      })}
+        {/* <h3>Name : {data.site.siteMetadata.person.name}</h3> */}
+        <h3> Site title is : {title}</h3>
     </div>
-  </div>
+  )
 }
 
-export default ComponentName
+export default FetchData
