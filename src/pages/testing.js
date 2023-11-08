@@ -2,11 +2,31 @@ import React from 'react'
 
 import { graphql } from 'gatsby'
 
-const Testing = props => {
-    console.log(props)
+const Testing = ({data}) => {
+    const author = data.site.info.author
   return (
-    <div>Testing</div>
+    <div>Author : {author}</div>
   )
 }
 
+export const data = graphql`
+{
+  site {
+    info : siteMetadata {
+      title
+      description
+      author
+      person {
+        name
+        age
+      }
+      simpleData
+      complexData {
+        name
+        age
+      }
+    }
+  }
+}
+`
 export default Testing
