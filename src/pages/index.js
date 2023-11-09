@@ -1,21 +1,25 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import {page,text} from "../examples/home.module.css"
-import { ExampleButton } from "../examples/button"
+// import Images from "../examples/Images"
+import { StaticImage } from "gatsby-plugin-image"
+import FetchData from "../examples/fetchData"
 
 export default function Home() {
   return (
   <Layout>
-    <div className={page}>
-      <ExampleButton>Click Me</ExampleButton>
-      <h1>Home Page</h1>
-      <h1>Hello World</h1>
-      <h1>Hello People</h1>
-      <p className={text}>
-        Lorem23gf,gbmflmlf dfee Lorem23gf,gbmflmlf dfee Lorem23gf,gbmflmlf dfee Lorem23gf,gbmflmlf dfee Lorem23gf,gbmflmlf dfee Lorem23gf,gbmflmlf dfee Lorem23gf,gbmflmlf dfee.
-      </p>
-    </div>
+    <main className="page">
+      <header className="hero">
+        <StaticImage src="../assets/images/main.jpeg" alt="images" className="hero-img" placeholder="tracedSVG" layout="fullWidth"/>
+        {/* Adding props */}
+        <div className="hero-container">
+          <div className="hero-text">
+            <h1>Blog</h1>
+            <h3>Lets learn together.</h3>
+          </div>
+        </div>
+      </header>
+      <FetchData/>
+    </main>
   </Layout>
   )
 }
