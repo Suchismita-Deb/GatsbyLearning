@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[796],{4959:function(e,l,t){t.r(l),t.d(l,{default:function(){return u}});var a=t(7294),r=t(5705);var n=()=>a.createElement("div",null,a.createElement("h2",null,"Gallery"));var u=()=>a.createElement(r.Z,null,a.createElement("main",{className:"page"},a.createElement(n,null)))}}]);
+//# sourceMappingURL=component---src-pages-testing-js-d8ba1dc4ae3cb248f965.js.map

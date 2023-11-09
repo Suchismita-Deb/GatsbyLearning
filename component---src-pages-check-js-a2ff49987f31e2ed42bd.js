@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[467],{4907:function(e,l,t){t.r(l);var a=t(7294),r=t(5705);l.default=()=>a.createElement(r.Z,null,a.createElement("h1",null,"Check Page"))}}]);
+//# sourceMappingURL=component---src-pages-check-js-a2ff49987f31e2ed42bd.js.map
